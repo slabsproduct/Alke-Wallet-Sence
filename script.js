@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     if ($('#history-container').length) {
         let movs = JSON.parse(localStorage.getItem('movs'));
-        movs.reverse().forEach(m => {
+        movs.reverse().forEach(m => {git push -u origin main --force
             let c = m.mod === 'plus' ? 'text-success' : 'text-danger';
             $('#history-container').append(`<div class="d-flex justify-content-between border-bottom py-2"><div class="small"><strong>${m.tipo}</strong><br>${m.fecha}</div><span class="${c} font-weight-bold">${m.mod==='plus'?'+':'-'}$${m.monto.toLocaleString()}</span></div>`);
         });
