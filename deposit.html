@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><title>Alke Wallet - Depositar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h2 class="h5 text-center mb-4">Ingresar Dinero</h2>
+        <input type="number" id="monto-deposito" class="form-control mb-3" placeholder="Monto a depositar $">
+        <button id="btn-confirm-depo" class="btn btn-navy btn-block">Confirmar</button>
+        
+        <div id="confirm-depo-box" class="confirm-box text-center">
+            <p class="text-success font-weight-bold mb-2">¡Depósito Exitoso!</p>
+            <button onclick="location.reload()" class="btn btn-sm btn-outline-success mr-2">Otro depósito</button>
+            <button onclick="location.href='menu.html'" class="btn btn-sm btn-success">Ir al Inicio</button>
+        </div>
+        <button onclick="location.href='menu.html'" class="btn btn-link btn-block mt-2">Cancelar</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

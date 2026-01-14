@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><title>Alke Wallet - Menú</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container text-center">
+        <img src="https://www.svgrepo.com/show/448894/bank.svg" style="width:50px" class="mb-3">
+        <h2 class="h4 font-weight-bold mb-4">Mi Panel</h2>
+        <div class="balance-container">
+            <p class="mb-1 small">Saldo Disponible</p>
+            <h2 id="main-balance">$0</h2>
+        </div>
+        <button onclick="location.href='deposit.html'" class="btn btn-navy btn-block mb-3">Depositar</button>
+        <button onclick="location.href='sendmoney.html'" class="btn btn-navy btn-block mb-3">Enviar Dinero</button>
+        <button onclick="location.href='transactions.html'" class="btn btn-navy btn-block mb-3">Movimientos</button>
+        <button onclick="location.href='login.html'" class="btn btn-link btn-block text-danger small">Cerrar Sesión</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

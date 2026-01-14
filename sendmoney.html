@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><title>Alke Wallet - Transferir</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h2 class="h5 text-center mb-3">Transferir</h2>
+        <button id="btn-show-add" class="btn btn-outline-primary btn-sm btn-block mb-3">+ Agregar Destinatario</button>
+        <div id="form-new-dest" style="display:none;" class="bg-light p-3 border rounded mb-3">
+            <input type="text" id="new-n" class="form-control form-control-sm mb-2" placeholder="Nombre">
+            <input type="text" id="new-a" class="form-control form-control-sm mb-2" placeholder="Alias">
+            <button id="btn-save-dest" class="btn btn-success btn-sm btn-block">Guardar</button>
+        </div>
+        <input type="text" id="search-dest" class="form-control form-control-sm mb-3" placeholder="Buscar destinatario...">
+        <ul id="lista-dest" class="list-group mb-3" style="max-height: 200px; overflow-y: auto;"></ul>
+        <div id="panel-monto-envio" style="display:none;">
+            <input type="number" id="monto-envio" class="form-control mb-2" placeholder="Monto $">
+            <button id="btn-exec-send" class="btn btn-navy btn-block">Enviar</button>
+        </div>
+        <div id="confirm-send-box" class="confirm-box text-center">
+            <p class="text-success font-weight-bold mb-2">¡Transferencia exitosa!</p>
+            <button onclick="location.reload()" class="btn btn-sm btn-outline-success mr-2">Otro envío</button>
+            <button onclick="location.href='menu.html'" class="btn btn-sm btn-success">Inicio</button>
+        </div>
+        <button onclick="location.href='menu.html'" class="btn btn-link btn-block">Volver</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
